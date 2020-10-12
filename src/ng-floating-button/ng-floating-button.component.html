@@ -3,9 +3,9 @@
     <a class="mfb-component__button--main" [attr.data-mfb-label]="label" href="JavaScript:void(0);"
     (click)="clicked($event)" (mouseenter)="entered($event)" (mouseleave)="leaved($event)">
       <!-- the main button icon visibile by default -->
-      <i class="mfb-component__main-icon--resting {{iconClass}}"></i>
+      <mat-icon class="mfb-component__main-icon--resting">{{iconClass}}</mat-icon>
       <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-      <i class="mfb-component__main-icon--active {{activeIconClass}}"></i>
+      <mat-icon class="mfb-component__main-icon--active">{{activeIconClass}}</mat-icon>
     </a>
 
     <ul class="mfb-component__list">
